@@ -23,40 +23,46 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         main{
-            display: flex;
-            justify-content: center;
+            width: 100%;
         }
         .grid{
             display: flex;
             flex-wrap: wrap;
             max-width: 500px;
             gap: 10px;
+            margin: 0 auto;
+            padding-left: 70px;
         }
         .grid img {
-            width: 48%;          
+            width: 100%;          
             border-radius: 10px; 
             cursor: pointer;       
             transition: transform 0.3s;
         }
-         .grid img:hover {
-            transform: scale(1.05);
+        .maincontainer{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
         }
     </style>
 
 </head>
 <body>
     <header>
-        <h1>Videos legais para assistir</h1>
+    <h1>Videos legais para assistir</h1>
     </header>
+        <div class="maincontainer">
 
-    <main>
-        <section class="grid">
-            <img src="imagens/thumb-hardware.png" alt="thumb-hardware">
-            <img src="imagens/thumb-html.png" alt="thumb-html">
-            <img src="imagens/thumb-js.png" alt="thumb-js">
-            <img src="imagens/thumb-python.png" alt="thumb-python">
-        </section>
-    </main>
+            <main>
+                <section class="grid">
 
-</body>
+                    <a href="hardware.html"><img src="imagens/thumb-hardware.png" alt="thumb-hardware"></a>
+                    <a href="html.html"><img src="imagens/thumb-html.png" alt="thumb-html"></a>
+                    <a href="javascript.html"><img src="imagens/thumb-js.png" alt="thumb-js"></a>
+                    <a href="python.html"><img src="imagens/thumb-python.png" alt="thumb-python"></a>
+
+                </section>
+            </main>
+        </div>
+ </body>
 </html>
